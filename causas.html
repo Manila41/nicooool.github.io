@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Causas</title> <link rel="stylesheet" href="css/causas.css">
+
+
+</head>
+<body>
+  <main>
+    <div class="header">
+      <h1 class="header h1">ANNEDA</h1>
+      <a href="inicio.html"><img src="img/logo.jpg" alt="Logo" class="logo"></a>
+  </div>
+  <nav>
+    <div class="botones">
+      
+          <a href="inicio.html">INICIO</a>
+             </a>
+           
+         <a href="sintomas.html">SINTOMAS</a>
+             </a>
+         <a href="prevencion.html">PREVENCION</a>
+              </a> 
+          <a href="nosotros.html">NOSOTROS</a>
+              </a>
+      
+    </div>
+  </nav>
+
+
+
+
+  <div class="block1">
+
+    <div class="block2">
+      <div class="accordion">
+        <button class="accordion-button">Estrés académico</button>
+        <div class="accordion-content">
+            <p>La presión por obtener buenas calificaciones y cumplir con las expectativas académicas puede ser abrumadora.</p>
+        </div>
+
+        <button class="accordion-button">Acoso escolar</button>
+        <div class="accordion-content">
+            <p>El bullying, tanto físico como cibernético, puede llevar a sentimientos de aislamiento y baja autoestima.</p>
+        </div>
+
+        <button class="accordion-button">Problemas sociales</button>
+        <div class="accordion-content">
+            <p>Las presiones del grupo social pueden ser estresantes, especialmente en la adolescencia, cuando la aceptación social es fundamental.</p>
+        </div>
+
+        <button class="accordion-button">Factores biológicos</button>
+        <div class="accordion-content">
+            <p>Desequilibrios químicos en el cerebro, genética y cambios hormonales durante la pubertad pueden influir en la salud mental.</p>
+        </div>
+
+        <button class="accordion-button">Uso excesivo de redes sociales</button>
+        <div class="accordion-content">
+            <p>La comparación constante con los demás y la exposición a contenido negativo pueden afectar la autoestima y la salud mental.</p>
+        </div>
+
+    </div>
+
+    
+     </div>
+     
+  
+
+  <div style="display: flex; justify-content: center; width: 100%;">
+    <div style="position: relative; padding-bottom: 56.25%; padding-top: 0; height: 0; width: 95%; margin: 20px;">
+        <iframe title="Completar la frase juego" frameborder="0" width="1200" height="400" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" src="https://view.genially.com/66cf883d831d64c611337905" type="text/html" allowscriptaccess="always" allowfullscreen="true" scrolling="yes" allownetworking="all"></iframe>
+    </div>
+
+
+</div>
+</div>
+
+
+  </main>
+  <script>
+    
+    const accordionButtons = document.querySelectorAll('.accordion-button');
+
+    accordionButtons.forEach(button => {
+        button.addEventListener('click', function() {
+            
+            const content = this.nextElementSibling;
+
+            
+            if (content.style.display === "block") {
+                content.style.display = "none";
+            } else {
+                
+                document.querySelectorAll('.accordion-content').forEach(c => c.style.display = 'none');
+                content.style.display = "block";
+            }
+        });
+    });
+</script>
+
+<footer>
+    <div class="footer-content">
+     
+      <ul class="social-media">
+          <li><a href="https://www.facebook.com" target="_blank"><img src="img/fb.png" alt="Facebook"></a></li>
+          <li><a href="https://www.instagram.com" target="_blank"><img src="img/ig (2).png" alt="Instagram"></a></li>
+      </ul>
+      <p>&copy; 2024 Tu sitio de salud mental. Todos los derechos reservados.</p>
+  </div>
+    </footer>
+  
+    
+</body>    
+</html>

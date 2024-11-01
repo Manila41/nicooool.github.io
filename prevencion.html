@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>prevencion</title>
+
+   
+
+   <link rel="stylesheet" href="css/prevencion.css">
+</head>
+<body>
+    <main>
+      <div class="header">
+        <h1 class="header h1">ANNEDA</h1>
+        <a href="inicio.html"><img src="img/logo.jpg" alt="Logo" class="logo"></a>
+    </div>
+    <nav>
+        <div class="botones">
+            
+         <a href="causas.html">CAUSAS</a>
+        </a>
+
+    <a href="sintomas.html">SINTOMAS</a>
+        </a>
+    <a href="inicio.html">INICIO</a>
+         </a> 
+     <a href="nosotros.html">NOSOTROS</a>
+         </a>
+        
+        </div>
+           
+        
+             
+
+
+    </nav>
+
+
+
+    <button class="carousel-button prev-btn" onclick="moveSlide(-1)">&#10094;</button>
+    <button class="carousel-button next-btn" onclick="moveSlide(1)">&#10095;</button>
+  </div>
+
+  <script>
+    let currentSlide = 0;
+
+    function moveSlide(direction) {
+      const slides = document.querySelector('.carousel-slides');
+      const totalSlides = document.querySelectorAll('.carousel-slide').length;
+
+      currentSlide = (currentSlide + direction + totalSlides) % totalSlides;
+      slides.style.transform = `translateX(-${currentSlide * 100}%)`;
+    }
+  </script>
+   
+
+   <div class="block1">
+    
+    
+    <button id="btn-prevenir">¿Cómo prevenir los posibles problemas que se pueden presentar en la salud mental de los estudiantes?</button>
+  
+    
+    <div id="info">
+      <p><strong>1. Educación y Conciencia</strong></p>
+      <p>Charlas y talleres: Realizar sesiones sobre salud mental para informar a los estudiantes sobre los síntomas y la importancia de buscar ayuda.</p>
+      <p>Material informativo: Distribuir folletos o recursos digitales que expliquen la salud mental.</p>
+  
+      <p><strong>2. Fomentar un Ambiente de Apoyo</strong></p>
+      <p>Programas de tutoría: Asignar mentores que puedan guiar y apoyar a los estudiantes.</p>
+      <p>Espacios seguros: Crear ambientes donde los estudiantes se sientan cómodos compartiendo sus preocupaciones.</p>
+  
+      <p><strong>3. Desarrollo de Habilidades</strong></p>
+      <p>Técnicas de manejo del estrés: Enseñar técnicas de relajación, como la meditación y la respiración profunda.</p>
+      <p>Habilidades sociales: Fomentar la comunicación y la resolución de conflictos.</p>
+  
+      <p><strong>4. Actividades Extracurriculares</strong></p>
+      <p>Deportes y arte: Promover la participación en actividades que fomenten la expresión y el trabajo en equipo.</p>
+      <p>Voluntariado: Involucrar a los estudiantes en actividades que les permitan contribuir a la comunidad.</p>
+  
+      <p><strong>5. Atención y Recursos</strong></p>
+      <p>Acceso a profesionales: Facilitar la disponibilidad de psicólogos o consejeros escolares.</p>
+      <p>Líneas de ayuda: Proporcionar información sobre líneas de apoyo para aquellos que necesiten hablar.</p>
+  
+      <p><strong>6. Involucrar a la Familia</strong></p>
+      <p>Talleres para padres: Educar a las familias sobre cómo apoyar a sus hijos en momentos difíciles.</p>
+      <p>Comunicación abierta: Fomentar un diálogo constante entre padres e hijos sobre emociones y preocupaciones.</p>
+  
+      <p><strong>7. Fomentar Hábitos Saludables</strong></p>
+      <p>Alimentación y ejercicio: Promover una dieta equilibrada y la actividad física regular.</p>
+      <p>Sueño adecuado: Educar sobre la importancia de dormir lo suficiente para la salud mental.</p>
+  
+      <p>Implementar estas estrategias puede ayudar a prevenir problemas de salud mental y crear un ambiente más saludable y positivo para los estudiantes.</p>
+    </div>
+  
+    <script>
+      
+      document.getElementById("btn-prevenir").onclick = function() {
+        var info = document.getElementById("info");
+        if (info.style.display === "none") {
+          info.style.display = "block";
+        } else {
+          info.style.display = "none";
+        }
+      }
+    </script>
+  
+  </div>
+  
+  
+      
+  </div>
+  
+
+
+
+
+  <div class="carousel-container">
+    <div class="carousel-slides">
+      
+      <div class="carousel-slide">
+        <iframe src="https://view.genially.com/6706ffb32bf17dffc71554b9/interactive-content-lista-pizarra" width="100%" height="500" frameborder="0" allowfullscreen></iframe>
+      </div>
+
+      <div class="carousel-slide">
+        <iframe src="https://view.genially.com/6706c9a39ea24fb6cf6eab2b/interactive-content-storyboard-genial" width="100%" height="500" frameborder="0" allowfullscreen></iframe>
+      </div>
+
+      <div class="carousel-slide">
+        <iframe src="https://view.genially.com/6707fcd27ba7010a8723f286/interactive-content-lista-piano" width="90%" height="500" frameborder="0" allowfullscreen></iframe>
+      </div>
+
+      <div class="carousel-slide">
+        <iframe src="https://view.genially.com/67081bd77ba7010a873b3322/interactive-content-lista-de-niveles" width="90%" height="500" frameborder="0" allowfullscreen></iframe>
+      </div>
+
+      <div class="carousel-slide">
+        <iframe src="https://view.genially.com/670827fad969e969ff1c217c/interactive-content-tablero-de-corcho" width="90%" height="500" frameborder="0" allowfullscreen></iframe>
+      </div>
+
+      
+    </div>
+
+
+    
+  
+    
+</main>
+
+
+<footer>
+  <div class="footer-content">
+   
+    <ul class="social-media">
+        <li><a href="https://www.facebook.com" target="_blank"><img src="img/fb.png" alt="Facebook"></a></li>
+        <li><a href="https://www.instagram.com" target="_blank"><img src="img/ig (2).png" alt="Instagram"></a></li>
+    </ul>
+    <p>&copy; 2024 Tu sitio de salud mental. Todos los derechos reservados.</p>
+</div>
+  </footer>
+  
+
+</body>
+</html>
